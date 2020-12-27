@@ -20,7 +20,7 @@ const index = (props) => {
 
 export default index;
 export async function getStaticProps(context) {
-  const res = await fetch("https://animermaid.herokuapp.com/anime/");
+  const res = await fetch("https://animermaidpp.com/anime/");
   const data = await res.json();
   return {
     props: { data }, // will be passed to the page component as props
