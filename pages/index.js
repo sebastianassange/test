@@ -3,7 +3,7 @@ import axios from "axios";
 const index = () => {
   const [state, setState] = useState();
   useEffect(() => {
-    axios.get("http://animermaid.herokuapp.com/anime/").then((res) => {
+    axios.get("https://animermaid.herokuapp.com/anime/").then((res) => {
       setState(res.data.results);
     });
   }, []); // See Note 2
